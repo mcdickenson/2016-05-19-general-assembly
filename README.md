@@ -5,6 +5,6 @@ Code and slides for "Intro to Python Programming" at General Assembly in Denver,
 Resources:
 
 - [Course website](https://generalassemb.ly/education/introduction-to-python-programming/denver/23900)
-- [Data]()
+- [Data](https://github.com/mcdickenson/2016-05-19-general-assembly/raw/master/data.csv)
 - Intro script (forthcoming)
 - Data analysis script (forthcoming)
