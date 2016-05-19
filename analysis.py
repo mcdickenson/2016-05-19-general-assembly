@@ -7,8 +7,7 @@ import matplotlib.pyplot as plt
 # create a data series
 # series work kind of like lists
 # use for one-dimensional data
-mySeries = Series([])
-mymySeries = Series([4, 3, 5, np.nan, 6, 8])
+mySeries = Series([4, 3, 5, np.nan, 6, 8])
 print mySeries
 mySeries.values
 mySeries.index
