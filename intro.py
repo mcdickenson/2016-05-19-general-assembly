@@ -57,19 +57,6 @@ True or False
 len("hello") == len("world")
 
 
-
-# Functions
-def my_function():
-  print "hello world"
-
-my_function()
-
-def show_word(word):
-  print("hello " + word)
-
-show_word("cat")
-show_word("dog")
-
 # Variables
 x = 1
 y = 2
@@ -79,8 +66,37 @@ x = x + 1
 print(x)
 print(z)
 
+
+# Functions
+def my_function():
+  print "hello world"
+
+def inconsistent():
+  print "line one"
+    print "line two"
+  print "line three"
+
+my_function()
+
+def show_word(word):
+  print("hello " + str(word))
+
+def multiply(num1, num2):
+    print(num1 * num2)
+
+show_word("cat")
+show_word("dog")
+
 output = show_word("cat")
 print(output)
+
+# write a function for z that updates when x and y change
+x = 1
+y = 2
+# z = x + y
+def z(x, y):
+    return x + y
+
 
 # returning output
 def greet_word(word):
@@ -104,6 +120,12 @@ len([1, 2, 3])
 myList = [8, 6, 7, 5, 3, 0, 9]
 for number in myList:
   print(number)
+  print(number * 2)
+  print("-----")
+
+for value in myList:
+  print(value)
+
 
 if 5 in myList:
   print("yes")
@@ -112,3 +134,11 @@ if 10 in myList:
   print("yes")
 else:
   print("no")
+
+
+def check_in_list(value, collection):
+  if value in collection:
+    print("yes")
+  else:
+    print "no"
+

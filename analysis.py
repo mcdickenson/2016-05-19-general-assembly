@@ -45,7 +45,8 @@ mySeries.describe()
 
 # DataFrames are useful for multidimentional data
 # let's load data from a remote file
-data = pd.read_csv("https://github.com/mcdickenson/2016-05-19-general-assembly/raw/master/data.csv")
+# data = pd.read_csv("https://github.com/mcdickenson/2016-05-19-general-assembly/raw/master/data.csv")
+data = pd.read_csv("/home/mcdickenson1/data.csv")
 
 # take a look at the data
 data.head()
@@ -107,7 +108,9 @@ print data
 
 # Visualizing data
 fig = plt.figure()
-plot.scatter(data['roundabouts'], data['fatalities'])
+plt.scatter(data['roundabouts'], data['fatalities'])
+plt.xlabel('Roundabouts per 1,000 intersections')
+plt.ylabel('Traffic fatalities per 100,000 inhabitants')
 fig.savefig("graph1.png")
 
 # let's calculate the correlation
